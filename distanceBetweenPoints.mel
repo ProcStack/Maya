@@ -1,0 +1,10 @@
+// For what ever reason, a scene set to CM,
+// when imported into a Cura slicing software, that unit count is mm not cm
+// So this is assuming that 1 unit is a mm
+
+//Select two verts, run this, and it will print the distance between the two points in standard and metric
+string $sel[]=`ls -sl -flatten`;
+vector $p1=`pointPosition $sel[0]`;
+vector $p2=`pointPosition $sel[1]`;
+float $dist=`mag ($p1-$p2)`;
+print ("Distance - "+$dist+" mm; "+($dist/25.4)+" in");
