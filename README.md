@@ -3,18 +3,13 @@ Because Maya LT is limited..
 
 There is no Python access in Maya LT and many good deformers are missing.
 
-I will be adding many of the scripts I wrote in college to this repository.
-
+Tartarus is a script tool box I wrote back in 2007-2008 while in college.  (The toolbox has been shelved and shall not be added to. Bugs exist in the newer versions of maya, but all in all, still work to their initial design.)
 Many of the topology scripts I wrote I still use today, along with the quick multi split script.
-It may all be in Mel, but works fairly fast.
+It may all be in Mel, but works fairly fast; so will work in Maya LT
 
-The toolbox can be found here---
+Additional information for Tartarus can be found here---
 
 http://tartarus.metal-asylum.net/
-
-(Use the "Download Tartarus v2.01" link, the highend3d page no longer exists)
-
-A functions list can be found here- http://tartarus.metal-asylum.net/functionsTools.htm
 
 
 *Please note!!*---
