@@ -1,7 +1,6 @@
 # Maya
-Because Maya LT is limited..
-
-There is no Python access in Maya LT and many good deformers are missing.
+Because Maya LT is limited... (In title and available functions.) There is no Python access in Maya LT and many good deformers are missing.
+But I'm not shelling out more money for the full version of Maya. (Houdini for life!)
 
 Tartarus is a script tool box I wrote back in 2007-2008 while in college.  (The toolbox has been shelved and shall not be added to. Bugs exist in the newer versions of maya, but all in all, still works to its initial design.)
 
