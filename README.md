@@ -1,6 +1,7 @@
 # Maya
-Because Maya LT is limited
-No Python access in Maya LT and many good deformers are missing.
+Because Maya LT is limited..
+
+There is no Python access in Maya LT and many good deformers are missing.
 
 I will be adding many of the scripts I wrote in college to this repository.
 
