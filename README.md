@@ -3,9 +3,10 @@ Because Maya LT is limited..
 
 There is no Python access in Maya LT and many good deformers are missing.
 
-Tartarus is a script tool box I wrote back in 2007-2008 while in college.  (The toolbox has been shelved and shall not be added to. Bugs exist in the newer versions of maya, but all in all, still work to their initial design.)
+Tartarus is a script tool box I wrote back in 2007-2008 while in college.  (The toolbox has been shelved and shall not be added to. Bugs exist in the newer versions of maya, but all in all, still works to its initial design.)
+
 Many of the topology scripts I wrote I still use today, along with the quick multi split script.
-It may all be in Mel, but works fairly fast; so will work in Maya LT
+It may all be in Mel, but works fairly fast; so it will work in Maya LT
 
 Additional information for Tartarus can be found here---
 
