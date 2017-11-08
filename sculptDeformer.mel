@@ -2,3 +2,21 @@
 // Was a quick throw together for a 3d print I'm prepping
 // Values will need to be manually set, sorta.
 
+// Select your points, then select another point or locator last
+// The last selection is used as the centroid to move the initial selected points to the set $dist away from it.
+// You can use my distanceBetweenPoints.mel script to find a desired distance.
+
+global proc sculptDeform(float $dist){
+    string $sel[]=`ls -sl -flatten`;
+    vector $p1=`pointPosition $sel[size($sel)-1]`;
+    vector $curP, $math;
+    int $x;
+    float $mag;
+    for($x=0; $x<size($sel)-1; ++$x){
+        $curP=`pointPosition $sel[$x]`;
+        $math=$curP-$p1;
+        $mag=`mag ($math)`;
+        $math=$math*(1/$mag)*$dist+$p1;
+        move -a ($math.x) ($math.y) ($math.z) $sel[$x];
+    }
+}
