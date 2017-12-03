@@ -5,9 +5,20 @@
 //Select two verts, run this, and it will print the distance between the two points in standard and metric
 // Run command-
 // printDistance;
+//Running the command again with no selection, it will return the distance between previously ran points
 
 global proc printDistance(){
+    global string $distCheckerArray[];
     string $sel[]=`ls -sl -flatten`;
+    if(size($sel)>0){
+        $distCheckerArray=$sel;
+    }else{
+        if(size($distCheckerArray)==0){
+            error "Please select 2 points or locators before running; or reading from previous ran points";
+        }else{
+            $sel=$distCheckerArray;
+        }
+    }
     vector $p1=`pointPosition $sel[0]`;
     vector $p2=`pointPosition $sel[1]`;
     float $dist=`mag ($p1-$p2)`;
